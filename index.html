@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website de portofoliu</title>
+
+    <!-- Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <span class="material-icons-outlined me-1">important_devices</span>
+                    Cristian Developer
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportdContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="container px-3">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link me-lg-3" href="/">Acasă</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-lg-3" href="#about">Despre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-lg-3" href="#projects">Proiecte</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-lg-3" href="#testimonials">Mărturii</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-lg-3" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Hero -->
+        <header class="bg-light py-5">
+            <div class="container px-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5">
+                            <h2 class="text-center fw-bold mb-2">Salut! Sunt Cristian,</h2>
+                            <h2 class="text-primary text-center fw-bold mb-2">web developer</h2>
+                            <p class="lead text-muted mb-4">
+                                Sunt specializat în dezvoltarea de aplicații web cu Django. Mai jos poți explora
+                                proiectele la care am contribuit și cele la care lucrez în prezent.
+                            </p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                                <a class="btn btn-primary btn-large text-uppercase" href="#about">
+                                    Află mai multe
+                                    <span class="material-icons-outlined ms-2">help_outline</span>
+                                </a>
+                                <a class="btn btn-outline-primary btn-large text-uppercase" href="#projects">
+                                    Vezi lucrările mele
+                                    <span class="material-icons-outlined ms-2">manage_search</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-xxl-6 justify-content-center">
+                        <img class="img-fluid rounded-3 my-5" src="images/hero.jpeg" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Hero -->
+        <main>
+
+            <!-- About -->
+            <section id="about" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">Despre</h2>
+                        <p class="lead text-muted mb-5">
+                            Sunt un dezvoltator web independent care construiește aplicații web elegante, rapide și
+                            scalabile.
+                        </p>
+                    </div>
+                </div>
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="d-flex mb-5 about">
+                                <span class="material-icons-outlined m-auto text-primary">palette</span>
+                            </div>
+                            <h5>Design</h5>
+                            <p class="text-muted mb-0">
+                                Creez design-uri frumoase și moderne optimizate pentru mai multe moduri de culoare (teme
+                                luminoase și întunecate).
+                            </p>
+                        </div>
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="d-flex mb-5 about">
+                                <span class="material-icons-outlined m-auto text-primary">code</span>
+                            </div>
+                            <h5>Dezvoltare</h5>
+                            <p class="text-muted mb-0">
+                                Dezvolt aplicații responsive, scalabile și rapide folosind cele mai bune standarde și
+                                practici de programare.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="d-flex mb-5 about">
+                                <span class="material-icons-outlined m-auto text-primary">settings</span>
+                            </div>
+                            <h5>Publicare și întreținere</h5>
+                            <p class="text-muted mb-0">
+                                De asemenea, mă implic în publicarea, actualizarea și întreținerea aplicațiilor cu
+                                atenție la detalii.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End About -->
+            <hr>
+            <!-- Projects -->
+            <!-- <section id="projects" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">Proiecte</h2>
+                        <p class="lead text-muted mb-5">Vizualizează câteva dintre cele mai recente proiecte ale mele
+                        </p>
+                    </div>
+                </div>
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="card h-100 shadow-lg border-0 bg-light">
+                                <img class="card-img-top" src="images/project1.png" alt="Project 1">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-3">Cryptocurrency Dashboard</h5>
+                                    <div class="mb-2">
+                                        <div class="badge bg-primary rounded-pill">Django</div>
+                                        <div class="badge bg-primary rounded-pill">React</div>
+                                        <div class="badge bg-primary rounded-pill">Material UI</div>
+                                    </div>
+                                    <p class="card-text">
+                                        A cryptocurrency dashboard app built using React 17,
+                                        Material UI 5 and Chart.js 3.
+                                    </p>
+                                </div>
+                                <div class="card-footer bg-transparent mb-3">
+                                    <a class="btn btn-outline-primary btn-sm text-uppercase"
+                                        href="https://github.com/BobsProgrammingAcademy/cryptocurrency-dashboard"
+                                        target="_blank">
+                                        <span class="material-icons-outlined me-1">code</span>
+                                        Codul sursa
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="card h-100 shadow-lg border-0 bg-light">
+                                <img class="card-img-top" src="images/project2.png" alt="Project 2">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-3">Website de portofoliu</h5>
+                                    <div class="mb-2">
+                                        <div class="badge bg-primary rounded-pill">Django</div>
+                                        <div class="badge bg-primary rounded-pill">React</div>
+                                        <div class="badge bg-primary rounded-pill">Material UI</div>
+                                    </div>
+                                    <p class="card-text">
+                                        Un site de portofoliu construit folosind Django 3, Next.js 12 și Material UI 5,
+                                        care utilizează o bază de date PostgreSQL pentru stocarea datelor.
+                                    </p>
+                                </div>
+                                <div class="card-footer bg-transparent mb-3">
+                                    <a class="btn btn-outline-primary btn-sm text-uppercase"
+                                        href="https://github.com/BobsProgrammingAcademy/portfolio-website"
+                                        target="_blank">
+                                        <span class="material-icons-outlined me-1">code</span>
+                                        Codul sursa
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="card h-100 shadow-lg border-0 bg-light">
+                                <img class="card-img-top" src="images/project3.png" alt="Project 3">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-3">Clasificarea imaginii</h5>
+                                    <div class="mb-2">
+                                        <div class="badge bg-primary rounded-pill">Django</div>
+                                        <div class="badge bg-primary rounded-pill">React</div>
+                                        <div class="badge bg-primary rounded-pill">Material UI</div>
+                                    </div>
+                                    <p class="card-text">
+                                        O aplicație de clasificare a imaginilor construită folosind TensorFlow 2, Django
+                                        3, React 17 și Material UI 5..
+                                    </p>
+                                </div>
+                                <div class="card-footer bg-transparent mb-3">
+                                    <a class="btn btn-outline-primary btn-sm text-uppercase"
+                                        href="https://github.com/BobsProgrammingAcademy/image-classification-mnist"
+                                        target="_blank">
+                                        <span class="material-icons-outlined me-1">code</span>
+                                        Codul sursa
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- End Projects -->
+
+            <!-- <hr> -->
+
+            <!-- Testimonials -->
+
+            <!-- <section id="testimonials" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">Mărturii</h2>
+                        <p class="lead text-muted mb-5">
+                            Vedeți ce au spus clienții despre munca mea</p>
+                    </div>
+                </div>
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="text-center fs-4 fst-italic mb-4 px-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                quis elit ut tellus tempus pharetra.
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center testimonial">
+                                <img class="rounded-circle me-3" src="images/user1.png" alt="User 1">
+                                <div class="fw-bold">
+                                    Amy Jones
+                                    <span class="text-primary mx-1">/</span>
+                                    CEO, Company 1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="text-center fs-4 fst-italic mb-4 px-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                quis elit ut tellus tempus pharetra.
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center testimonial">
+                                <img class="rounded-circle me-3" src="images/user2.png" alt="User 2">
+                                <div class="fw-bold">
+                                    James Smith
+                                    <span class="text-primary mx-1">/</span>
+                                    CEO, Company 2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="text-center fs-4 fst-italic mb-4 px-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                quis elit ut tellus tempus pharetra.
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center testimonial">
+                                <img class="rounded-circle me-3" src="images/user3.png" alt="User 3">
+                                <div class="fw-bold">
+                                    Mary Richards
+                                    <span class="text-primary mx-1">/</span>
+                                    CEO, Company 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- End Testimonials -->
+
+            <!-- <hr> -->
+
+            <!-- Contact -->
+
+            <section id="contact" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">Contact</h2>
+                        <p class="lead text-muted mb-5">
+                            Aveți nevoie de un developer web? Aș fi încântat să discutăm despre proiectele
+                            dumneavoastră.
+                        </p>
+                    </div>
+                </div>
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-xl-5 col-xxl-6 mb-5">
+                            <div id="map"></div>
+                        </div>
+                        <div class="col-lg-8 col-xl-7 col-xxl-6 mb-5">
+                            <div class="mb-5">
+                                <h6 class="text-uppercase mb-2">Adresa</h6>
+                                <p class="lead mb-0">Iași, România</p>
+                            </div>
+                            <div class="mb-5">
+                                <h6 class="text-uppercase mb-2">Telefon</h6>
+                                <p class="lead mb-0">0754 66 40 10</p>
+                            </div>
+                            <div class="mb-5">
+                                <h6 class="text-uppercase mb-2">Email</h6>
+                                <p class="lead mb-0">crstdanu@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Contact -->
+        </main>
+
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container px-5 mb-2">
+            <span>
+                crstdanu@gmail.com &copy;
+                <script>document.write(new Date().getFullYear())</script>
+            </span>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
